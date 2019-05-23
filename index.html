@@ -1,8 +1,124 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>J. Montesano</h1>
-<p>Hey, I'm a software developer studying Computer Science at West Virginia University.</p>
-<p>Check out my github: https://github.com/jjmonte</p>
-</body>
+  <style>
+    body {
+      background: #252525;
+    }
+
+    @font-face {
+      font-family: Sansation;
+      src: url("/home/jon/Documents/git/jjmonte.github.io/fonts/Sansation_Regular.ttf")
+        format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: Sansation-light;
+      src: url("/home/jon/Documents/git/jjmonte.github.io/fonts/Sansation_Light.ttf")
+      format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .header h1 {
+      float: left;
+      position: relative;
+      width: 251px;
+      height: 47px;
+
+      margin: 10px;
+
+      font-family: Sansation;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 42px;
+      line-height: 47px;
+      /* identical to box height */
+      padding-right: 10px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      vertical-align: middle;
+      color: #e7e7e7;
+    }
+    .header {
+      margin: 10px;
+      padding: 30px;
+      border: solid #89d560 2px;
+      display: inline-block;
+    }
+    .header #line {
+      float: left;
+      vertical-align: middle;
+      width: 1px;
+      height: 64px;
+    }
+    .header #icon {
+      width: 64px;
+      height: 64px;
+      vertical-align: middle;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .header #icon2 {
+      width: 80px;
+
+      vertical-align: middle;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    div {
+      color: white;
+    }
+    #bio {
+      font-family: Sansation-light;
+      margin: 10px;
+      padding: 10px;
+      border: solid #89d560 2px;
+      width: 200px;
+    }
+    a {
+      color: #89d560;
+    }
+  </style>
+  <body>
+    <div class="header">
+      <h1>J. Montesano</h1>
+      <img
+        id="line"
+        src="/home/jon/Documents/git/jjmonte.github.io/images/Line.png"
+      />
+      <a href="https://github.com/jjmonte" target="_blank"
+        ><img
+          id="icon"
+          src="/home/jon/Documents/git/jjmonte.github.io/images/git_icon.png"
+      /></a>
+      <a href="https://www.linkedin.com/in/jmontesano/" target="_blank"
+        ><img
+          id="icon"
+          src="/home/jon/Documents/git/jjmonte.github.io/images/linkedin_icon.png"
+      /></a>
+      <a href="" target="_blank"
+        ><img
+          id="icon"
+          src="/home/jon/Documents/git/jjmonte.github.io/images/blog_icon.png"
+      /></a>
+      <a href="j@montesano.dev" target="_blank"
+        ><img
+          id="icon2"
+          src="/home/jon/Documents/git/jjmonte.github.io/images/mail_icon.png"
+      /></a>
+    </div>
+
+    <div id="bio">
+      <p>
+        Hey, I'm a software developer studying Computer Science at West Virginia
+        University.
+      </p>
+      <p>I also DJ and do music directing at WVU's College Radio station, WWVU-FM.</p>
+      <p>Check out our <a href="u92.wvu.edu">stream</a>.</p>
+    </div>
+    <div></div>
+  </body>
 </html>
