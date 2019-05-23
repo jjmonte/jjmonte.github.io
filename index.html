@@ -7,14 +7,14 @@
 
     @font-face {
       font-family: Sansation;
-      src: url("/home/jon/Documents/git/jjmonte.github.io/fonts/Sansation_Regular.ttf")
+      src: url("fonts/Sansation_Regular.ttf")
         format("truetype");
       font-weight: normal;
       font-style: normal;
     }
     @font-face {
       font-family: Sansation-light;
-      src: url("/home/jon/Documents/git/jjmonte.github.io/fonts/Sansation_Light.ttf")
+      src: url("fonts/Sansation_Light.ttf")
       format("truetype");
       font-weight: normal;
       font-style: normal;
@@ -22,9 +22,8 @@
 
     .header h1 {
       float: left;
-      position: relative;
-      width: 251px;
-      height: 47px;
+      width: 256px;
+      height: 48px;
 
       margin: 10px;
 
@@ -35,7 +34,7 @@
       line-height: 47px;
       /* identical to box height */
       padding-right: 10px;
-      display: flex;
+      
       align-items: center;
       text-align: center;
       vertical-align: middle;
@@ -44,7 +43,7 @@
     .header {
       margin: 10px;
       padding: 30px;
-      border: solid #89d560 2px;
+      border: solid #89d560 1px;
       display: inline-block;
     }
     .header #line {
@@ -75,11 +74,27 @@
       font-family: Sansation-light;
       margin: 10px;
       padding: 10px;
-      border: solid #89d560 2px;
-      width: 200px;
+      border: solid #89d560 1px;
+      width: 160px;
+      float: left;
+      
+    }
+    #resume {
+      font-family: Sansation-light;
+      margin: 10px;
+      padding: 10px;
+      border: solid #89d560 1px;
+      width: 529px;
+      float: left;
+    }
+    #bio p {
+      margin: 10px;
     }
     a {
       color: #89d560;
+    }
+    body {
+      position: absolute;
     }
   </style>
   <body>
@@ -92,25 +107,26 @@
       <a href="https://github.com/jjmonte" target="_blank"
         ><img
           id="icon"
-          src="/home/jon/Documents/git/jjmonte.github.io/images/git_icon.png"
+          src="images/git_icon.png"
       /></a>
       <a href="https://www.linkedin.com/in/jmontesano/" target="_blank"
         ><img
           id="icon"
-          src="/home/jon/Documents/git/jjmonte.github.io/images/linkedin_icon.png"
+          src="images/linkedin_icon.png"
       /></a>
       <a href="" target="_blank"
         ><img
           id="icon"
-          src="/home/jon/Documents/git/jjmonte.github.io/images/blog_icon.png"
+          src="images/blog_icon.png"
       /></a>
-      <a href="j@montesano.dev" target="_blank"
+      <a href="mailto: j@montesano.dev" target="_blank"
         ><img
           id="icon2"
-          src="/home/jon/Documents/git/jjmonte.github.io/images/mail_icon.png"
+          src="images/mail_icon.png"
       /></a>
     </div>
 
+    <div id="main">
     <div id="bio">
       <p>
         Hey, I'm a software developer studying Computer Science at West Virginia
@@ -119,6 +135,10 @@
       <p>I also DJ and do music directing at WVU's College Radio station, WWVU-FM.</p>
       <p>Check out our <a href="u92.wvu.edu">stream</a>.</p>
     </div>
-    <div></div>
+
+    <div id="resume">
+      <p>[insert resume here]</p>
+    </div>
+  </div>
   </body>
 </html>
