@@ -7,65 +7,86 @@
 
     @font-face {
       font-family: Sansation;
-      src: url("fonts/Sansation_Regular.ttf")
-        format("truetype");
+      src: url("fonts/Sansation_Regular.ttf") format("truetype");
       font-weight: normal;
       font-style: normal;
     }
     @font-face {
       font-family: Sansation-light;
-      src: url("fonts/Sansation_Light.ttf")
-      format("truetype");
+      src: url("fonts/Sansation_Light.ttf") format("truetype");
       font-weight: normal;
       font-style: normal;
     }
 
     .header h1 {
       float: left;
-      width: 256px;
-      height: 48px;
 
       margin: 10px;
 
       font-family: Sansation;
       font-style: normal;
       font-weight: normal;
-      font-size: 42px;
-      line-height: 47px;
-      /* identical to box height */
-      padding-right: 10px;
-      
-      align-items: center;
-      text-align: center;
+      font-size: 36px;
+      line-height: 36px;
       vertical-align: middle;
+      /* identical to box height */
+      padding-right: 40px;
+      padding-left: 40px;
+
+      text-align: center;
       color: #e7e7e7;
     }
     .header {
+      height: auto;
       margin: 10px;
-      padding: 30px;
+      padding: 10px;
       border: solid #89d560 1px;
-      display: inline-block;
+      vertical-align: middle;
     }
     .header #line {
       float: left;
       vertical-align: middle;
       width: 1px;
-      height: 64px;
+      max-height: 48px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      display: inline-block;
     }
-    .header #icon {
-      width: 64px;
-      height: 64px;
+    .header img {
+      display: inline-block;
+      width: 32px;
       vertical-align: middle;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
-    .header #icon2 {
-      width: 80px;
+    /* .imgframe {
+      display: inline-block;
+      vertical-align: middle;
+      align-content: center;
+    } */
+    /* .header #icon {
+      /* display: inline-block; */
+    /* width: 32px; */
+    /* height: 32px; */
+    /* vertical-align: middle; */
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    /* padding-left: 40px; */
+    /* padding-right: 40px; */
 
-      vertical-align: middle;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+    /* } */
+    /* .header #icon2 { */
+    /* display: inline-block; */
+    /* width: 40px; */
+    /* height:25px; */
+    /* vertical-align: middle; */
+    /* padding-top: 2px; */
+    /* padding-bottom: 2px; */
+    /* padding-left: 42px; */
+    /* padding-right: 47px; */
+    /* } */
 
     div {
       color: white;
@@ -75,9 +96,8 @@
       margin: 10px;
       padding: 10px;
       border: solid #89d560 1px;
-      width: 160px;
+      width: 200px;
       float: left;
-      
     }
     #resume {
       font-family: Sansation-light;
@@ -100,45 +120,43 @@
   <body>
     <div class="header">
       <h1>J. Montesano</h1>
-      <img
-        id="line"
-        src="/home/jon/Documents/git/jjmonte.github.io/images/Line.png"
-      />
-      <a href="https://github.com/jjmonte" target="_blank"
-        ><img
-          id="icon"
-          src="images/git_icon.png"
-      /></a>
-      <a href="https://www.linkedin.com/in/jmontesano/" target="_blank"
-        ><img
-          id="icon"
-          src="images/linkedin_icon.png"
-      /></a>
-      <a href="" target="_blank"
-        ><img
-          id="icon"
-          src="images/blog_icon.png"
-      /></a>
-      <a href="mailto: j@montesano.dev" target="_blank"
-        ><img
-          id="icon2"
-          src="images/mail_icon.png"
-      /></a>
+      <span id="imgframe">
+        <img id="line" src="images/Line.png" />
+      </span>
+      <span id="imgframe"
+        ><a href="https://github.com/jjmonte" target="_blank"
+          ><img id="icon" src="images/git_icon.png"/></a
+      ></span>
+      <span id="imgframe"
+        ><a href="https://www.linkedin.com/in/jmontesano/" target="_blank"
+          ><img id="icon" src="images/linkedin_icon.png"/></a
+      ></span>
+      <span id="imgframe"
+        ><a href="" target="_blank"
+          ><img id="icon" src="images/blog_icon.png"/></a
+      ></span>
+      <span id="imgframe"
+        ><a href="mailto: j@montesano.dev" target="_blank"
+          ><img id="icon2" src="images/mail_icon.png"/></a
+      ></span>
     </div>
 
     <div id="main">
-    <div id="bio">
-      <p>
-        Hey, I'm a software developer studying Computer Science at West Virginia
-        University.
-      </p>
-      <p>I also DJ and do music directing at WVU's College Radio station, WWVU-FM.</p>
-      <p>Check out our <a href="u92.wvu.edu">stream</a>.</p>
-    </div>
+      <div id="bio">
+        <p>
+          Hey, I'm a software developer studying Computer Science at West
+          Virginia University.
+        </p>
+        <p>
+          I also DJ and do music directing at WVU's College Radio station,
+          WWVU-FM.
+        </p>
+        <p>Check out our <a href="https://wwvu-fm.com/">stream</a>.</p>
+      </div>
 
-    <div id="resume">
-      <p>[insert resume here]</p>
+      <div id="resume">
+        <p>[insert resume here]</p>
+      </div>
     </div>
-  </div>
   </body>
 </html>
