@@ -1,162 +1,215 @@
 <!DOCTYPE html>
 <html>
-  <style>
-    body {
-      background: #252525;
-    }
+    <style>
+        body {
+            position: absolute;
+            background: #1b1b1b;
+            /* margin-left: auto;
+        margin-right: auto; */
+        }
 
-    @font-face {
-      font-family: Sansation;
-      src: url("fonts/Sansation_Regular.ttf") format("truetype");
-      font-weight: normal;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: Sansation-light;
-      src: url("fonts/Sansation_Light.ttf") format("truetype");
-      font-weight: normal;
-      font-style: normal;
-    }
+        @font-face {
+            font-family: Sansation;
+            src: url("fonts/Sansation_Regular.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: Sansation-light;
+            src: url("fonts/Sansation_Light.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
 
-    .header h1 {
-      float: left;
+        .header h1 {
+            float: left;
 
-      margin: 10px;
+            margin: 10px;
 
-      font-family: Sansation;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 36px;
-      line-height: 36px;
-      vertical-align: middle;
-      /* identical to box height */
-      padding-right: 40px;
-      padding-left: 40px;
+            font-family: Sansation;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 36px;
+            vertical-align: middle;
+            /* identical to box height */
+            padding-right: 40px;
+            padding-left: 40px;
 
-      text-align: center;
-      color: #e7e7e7;
-    }
-    .header {
-      height: auto;
-      margin: 10px;
-      padding: 10px;
-      border: solid #89d560 1px;
-      vertical-align: middle;
-    }
-    .header #line {
-      float: left;
-      vertical-align: middle;
-      width: 1px;
-      max-height: 48px;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      display: inline-block;
-    }
-    .header img {
-      display: inline-block;
-      width: 32px;
-      vertical-align: middle;
-      padding-left: 40px;
-      padding-right: 40px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
-    /* .imgframe {
-      display: inline-block;
-      vertical-align: middle;
-      align-content: center;
-    } */
-    /* .header #icon {
-      /* display: inline-block; */
-    /* width: 32px; */
-    /* height: 32px; */
-    /* vertical-align: middle; */
-    /* padding-top: 10px; */
-    /* padding-bottom: 10px; */
-    /* padding-left: 40px; */
-    /* padding-right: 40px; */
+            text-align: center;
+            color: #e7e7e7;
+            background: #252525;
+        }
+        .header {
+            height: auto;
+            margin: 10px;
+            padding: 10px;
+            border: solid #89d560 1px;
+            vertical-align: middle;
+            background: #252525;
+        }
+        .header #line {
+            float: left;
+            vertical-align: middle;
+            width: 1px;
+            max-height: 48px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            display: inline-block;
+            background: #252525;
+        }
+        .header img {
+            display: inline-block;
+            width: 32px;
+            vertical-align: middle;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: #252525;
+        }
 
-    /* } */
-    /* .header #icon2 { */
-    /* display: inline-block; */
-    /* width: 40px; */
-    /* height:25px; */
-    /* vertical-align: middle; */
-    /* padding-top: 2px; */
-    /* padding-bottom: 2px; */
-    /* padding-left: 42px; */
-    /* padding-right: 47px; */
-    /* } */
+        .header img:hover {
+        }
 
-    div {
-      color: white;
-    }
-    #bio {
-      font-family: Sansation-light;
-      margin: 10px;
-      padding: 10px;
-      border: solid #89d560 1px;
-      width: 200px;
-      float: left;
-    }
-    #resume {
-      font-family: Sansation-light;
-      margin: 10px;
-      padding: 10px;
-      border: solid #89d560 1px;
-      width: 529px;
-      float: left;
-    }
-    #bio p {
-      margin: 10px;
-    }
-    a {
-      color: #89d560;
-    }
-    body {
-      position: absolute;
-    }
-  </style>
-  <body>
-    <div class="header">
-      <h1>J. Montesano</h1>
-      <span id="imgframe">
-        <img id="line" src="images/Line.png" />
-      </span>
-      <span id="imgframe"
-        ><a href="https://github.com/jjmonte" target="_blank"
-          ><img id="icon" src="images/git_icon.png"/></a
-      ></span>
-      <span id="imgframe"
-        ><a href="https://www.linkedin.com/in/jmontesano/" target="_blank"
-          ><img id="icon" src="images/linkedin_icon.png"/></a
-      ></span>
-      <span id="imgframe"
-        ><a href="" target="_blank"
-          ><img id="icon" src="images/blog_icon.png"/></a
-      ></span>
-      <span id="imgframe"
-        ><a href="mailto: j@montesano.dev" target="_blank"
-          ><img id="icon2" src="images/mail_icon.png"/></a
-      ></span>
-    </div>
+        div {
+            color: white;
+        }
 
-    <div id="main">
-      <div id="bio">
-        <p>
-          Hey, I'm a software developer studying Computer Science at West
-          Virginia University.
-        </p>
-        <p>
-          I also DJ and do music directing at WVU's College Radio station,
-          WWVU-FM.
-        </p>
-        <p>Check out our <a href="https://wwvu-fm.com/">stream</a>.</p>
-      </div>
+        .column {
+            position: relative;
+            float: left;
+        }
 
-      <div id="resume">
-        <p>[insert resume here]</p>
-      </div>
-    </div>
-  </body>
+        #portrait {
+            margin: 10px;
+            padding: 10px;
+            border: solid #89d560 1px;
+            float: left;
+        }
+        #portrait img {
+            width: 200px;
+            vertical-align: middle;
+        }
+        #bio {
+            font-family: Sansation-light;
+            margin: 10px;
+            padding: 10px;
+            border: solid #89d560 1px;
+            width: 200px;
+            float: left;
+            background: #252525;
+            clear: left;
+        }
+        #bio p {
+            margin: 10px;
+            background: #252525;
+        }
+
+        #resume {
+            font-family: Sansation-light;
+            margin: 10px;
+            padding: 10px;
+            border: solid #89d560 1px;
+            width: 655.72px;
+            float: left;
+            background: #252525;
+        }
+
+        a {
+            color: #89d560;
+            background: #252525;
+        }
+        #footer {
+            position: fixed;
+            text-align: center;
+            bottom: 0px;
+            width: 100%;
+            color: white;
+            font-family: Sansation-light;
+        }
+
+        .main {
+            width: 939.719px;
+            margin: auto;
+        }
+    </style>
+    <body>
+        <div class="main">
+            <div class="header">
+                <h1>J. Montesano</h1>
+                <span id="imgframe">
+                    <img id="line" src="images/Line.png" />
+                </span>
+                <span id="imgframe"
+                    ><a href="https://github.com/jjmonte" target="_blank"
+                        ><img id="icon" src="images/git_icon.png"/></a
+                ></span>
+                <span id="imgframe"
+                    ><a
+                        href="https://www.linkedin.com/in/jmontesano/"
+                        target="_blank"
+                        ><img id="icon" src="images/linkedin_icon.png"/></a
+                ></span>
+                <span id="imgframe"
+                    ><a href="" target="_blank"
+                        ><img id="icon" src="images/blog_icon.png"/></a
+                ></span>
+                <span id="imgframe"
+                    ><a href="mailto: j@montesano.dev" target="_blank"
+                        ><img id="icon2" src="images/mail_icon.png"/></a
+                ></span>
+            </div>
+
+            <div class="column">
+                <div id="portrait">
+                    <img src="images/Sinister_Stranger_chathead.jpeg" />
+                </div>
+
+                <div id="bio">
+                    <p>
+                        Hey, I'm a software developer studying Computer Science
+                        at West Virginia University.
+                    </p>
+                    <p>
+                        I also DJ and do music directing at WVU's College Radio
+                        station, WWVU-FM.
+                    </p>
+                    <p>
+                        Check out our <a href="https://wwvu-fm.com/">stream</a>.
+                    </p>
+                </div>
+            </div>
+
+            <div id="resume">
+                <p>
+                    Most of my recent work has been in full stack
+                    <b>Javascript</b> development, however I have prior
+                    experience in: <b>Java</b>, <b>C</b>, and
+                    <b>Python</b>.<br /><br />
+
+                    In the realm of Javascript, I have experience with:
+                    <b>AngularJS</b>, <b>React</b>, <b>Cesium.js</b>,
+                    <b>Node</b>, <b>Express</b>. I've used some of these skills
+                    to develop a MERN app in conjunction with
+                    <b>MySQL</b>.<br /><br />
+
+                    I am currently a development support intern at NextGen
+                    Federal Systems, where I am applying Javascript in
+                    geographical contexts. <br />
+                    <br />
+
+                    One of my ongoing projects is <b>RegRotator</b>, an open
+                    source MERN web application that allows radio stations to
+                    digitally manage their music rotation. It allows users to
+                    add albums to a database of their rotation and enter a
+                    description for the album. We are currently working on
+                    implementing a play count tracker for NACC charting
+                    purposes.
+                </p>
+            </div>
+            
+        </div>
+        <p id="footer">Montesano.dev</p>
+    </body>
 </html>
