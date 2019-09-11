@@ -1,215 +1,95 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        body {
-            position: absolute;
-            background: #1b1b1b;
-            /* margin-left: auto;
-        margin-right: auto; */
-        }
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      document.getElementById("tab-1").className = "MyClass";
+    </script>
+	</head>
 
-        @font-face {
-            font-family: Sansation;
-            src: url("fonts/Sansation_Regular.ttf") format("truetype");
-            font-weight: normal;
-            font-style: normal;
-        }
-        @font-face {
-            font-family: Sansation-light;
-            src: url("fonts/Sansation_Light.ttf") format("truetype");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        .header h1 {
-            float: left;
-
-            margin: 10px;
-
-            font-family: Sansation;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 36px;
-            line-height: 36px;
-            vertical-align: middle;
-            /* identical to box height */
-            padding-right: 40px;
-            padding-left: 40px;
-
-            text-align: center;
-            color: #e7e7e7;
-            background: #252525;
-        }
-        .header {
-            height: auto;
-            margin: 10px;
-            padding: 10px;
-            border: solid #89d560 1px;
-            vertical-align: middle;
-            background: #252525;
-        }
-        .header #line {
-            float: left;
-            vertical-align: middle;
-            width: 1px;
-            max-height: 48px;
-            padding-top: 2px;
-            padding-bottom: 2px;
-            display: inline-block;
-            background: #252525;
-        }
-        .header img {
-            display: inline-block;
-            width: 32px;
-            vertical-align: middle;
-            padding-left: 40px;
-            padding-right: 40px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            background: #252525;
-        }
-
-        .header img:hover {
-        }
-
-        div {
-            color: white;
-        }
-
-        .column {
-            position: relative;
-            float: left;
-        }
-
-        #portrait {
-            margin: 10px;
-            padding: 10px;
-            border: solid #89d560 1px;
-            float: left;
-        }
-        #portrait img {
-            width: 200px;
-            vertical-align: middle;
-        }
-        #bio {
-            font-family: Sansation-light;
-            margin: 10px;
-            padding: 10px;
-            border: solid #89d560 1px;
-            width: 200px;
-            float: left;
-            background: #252525;
-            clear: left;
-        }
-        #bio p {
-            margin: 10px;
-            background: #252525;
-        }
-
-        #resume {
-            font-family: Sansation-light;
-            margin: 10px;
-            padding: 10px;
-            border: solid #89d560 1px;
-            width: 655.72px;
-            float: left;
-            background: #252525;
-        }
-
-        a {
-            color: #89d560;
-            background: #252525;
-        }
-        #footer {
-            position: fixed;
-            text-align: center;
-            bottom: 0px;
-            width: 100%;
-            color: white;
-            font-family: Sansation-light;
-        }
-
-        .main {
-            width: 939.719px;
-            margin: auto;
-        }
-    </style>
-    <body>
-        <div class="main">
-            <div class="header">
-                <h1>J. Montesano</h1>
-                <span id="imgframe">
-                    <img id="line" src="images/Line.png" />
-                </span>
-                <span id="imgframe"
-                    ><a href="https://github.com/jjmonte" target="_blank"
-                        ><img id="icon" src="images/git_icon.png"/></a
-                ></span>
-                <span id="imgframe"
-                    ><a
-                        href="https://www.linkedin.com/in/jmontesano/"
-                        target="_blank"
-                        ><img id="icon" src="images/linkedin_icon.png"/></a
-                ></span>
-                <span id="imgframe"
-                    ><a href="" target="_blank"
-                        ><img id="icon" src="images/blog_icon.png"/></a
-                ></span>
-                <span id="imgframe"
-                    ><a href="mailto: j@montesano.dev" target="_blank"
-                        ><img id="icon2" src="images/mail_icon.png"/></a
-                ></span>
-            </div>
-
-            <div class="column">
-                <div id="portrait">
-                    <img src="images/Sinister_Stranger_chathead.jpeg" />
-                </div>
-
-                <div id="bio">
-                    <p>
-                        Hey, I'm a software developer studying Computer Science
-                        at West Virginia University.
-                    </p>
-                    <p>
-                        I also DJ and do music directing at WVU's College Radio
-                        station, WWVU-FM.
-                    </p>
-                    <p>
-                        Check out our <a href="https://wwvu-fm.com/">stream</a>.
-                    </p>
-                </div>
-            </div>
-
-            <div id="resume">
-                <p>
-                    Most of my recent work has been in full stack
-                    <b>Javascript</b> development, however I have prior
-                    experience in: <b>Java</b>, <b>C</b>, and
-                    <b>Python</b>.<br /><br />
-
-                    In the realm of Javascript, I have experience with:
-                    <b>AngularJS</b>, <b>React</b>, <b>Cesium.js</b>,
-                    <b>Node</b>, <b>Express</b>. I've used some of these skills
-                    to develop a MERN app in conjunction with
-                    <b>MySQL</b>.<br /><br />
-
-                    I am currently a development support intern at NextGen
-                    Federal Systems, where I am applying Javascript in
-                    geographical contexts. <br />
-                    <br />
-
-                    One of my ongoing projects is <b>RegRotator</b>, an open
-                    source MERN web application that allows radio stations to
-                    digitally manage their music rotation. It allows users to
-                    add albums to a database of their rotation and enter a
-                    description for the album. We are currently working on
-                    implementing a play count tracker for NACC charting
-                    purposes.
-                </p>
-            </div>
-            
+	<body>
+    <div class="flexy-boi">
+      <div class="side-bar">
+      <img id="photo" src="./resources/images/Sinister_Stranger_chathead.jpeg"></img>
+        <!-- hide name until it is minized from middle of page -->
+        <div class="sidebar-contents">
+          <div class="links">
+            <button class="btn-border"><span><i class="fa fa-linkedin" style="color: #00d3ff; font-size:30px; display: block"></i></span></button>
+            <button class="btn-border"><span><i class="fa fa-github" style="color: #00d3ff; font-size:30px; display: block"></i></span></button>
+            <button class="btn-border"><span><i class="fa fa-envelope" style="color: #00d3ff; font-size:30px; display: block"></i></span></button>
+          </div>
+          <div class="bio1">
+            I am a senior in computer science at West Virginia University.
+            My primary focus is in web development and I am building my skillset through personal projects,
+            in-house work at my college radio station, and my internship at NextGen Federal Systems.
+            <br><br>
+            Feel free to browse through this page to read about my projects and work experience.
+          </div>
+          <span id="skills-label">Skills</span>
+          <div class="skills">
+            <p class="skill">HTML</p>
+            <p class="skill">CSS</p>
+            <p class="skill">Javascript</p>
+            <p class="skill">React</p>
+            <p class="skill">MySQL</p>
+            <p class="skill">Node</p>
+            <p class="skill">Express</p>
+            <p class="skill">AngularJS</p>
+            <p class="skill">Cesium.js</p>
+            <p class="skill">C</p>
+            <p class="skill">Java</p>
+          </div>
         </div>
-        <p id="footer">Montesano.dev</p>
-    </body>
+				
+    </div>
+
+    <div class="main">
+      <div class="name-large">
+        J. Montesano <br> <span style="font-size: 45px; color:#00d3ff;">Developer</span>
+        <div id="tab-2" class="tab"><span>Experience</span></div>
+        <div id="tab-1" class="tab"><span>Projects</span></div>
+      </div>
+      
+      <div id="projects-main-container">
+        
+        <div class="project-container">
+          <span class="project-name">Reg Rotator</span>
+            <div class="project-description">
+              A web application designed for college radio stations to manage rotation, 
+              browse artists, and (soon) to create playlists. This CRUD app uses a MERN stack (MySQL, Express.js, React.js, Node.js)
+              to allow users to add albums to a database and categorize them by play priority, genre, release date, and more.
+              This project was initially meant to digitalize a primarily written process, but is growing into a hub for various radio tasks.
+              Collaboration with <a href="https://victorjperez.github.io/" style="color: #00d3ff">Victor Perez</a>.
+            </div>
+        </div>
+        <div class="project-container">
+          <span class="project-name">Air Track</span>
+            <div class="project-description">
+              This web application was originally a training project I planned and developed while learning AngularJS. The project evolved from
+              a simple HTML/AngularJS app into a single page React app. Utilizing Cesium.js for maps and the OpenSky Network API, Air Track allows
+              users to browse airports by state (US only) and view the flights arriving and departing from the specified airport over a selected time span.
+            </div>
+        </div>
+        <div class="project-container">
+          <span class="project-name">montesano.dev</span>
+            <div class="project-description">
+              This web page and domain are owned and maintained by myself as an attempt at better understanding web infrastructure. With hosting through GitHub Pages
+              and email through ProtonMail, I have set up this personal domain with encrypted communications.
+              I have upcoming plans to create a personal blog and a mobile version of the site.
+            </div>
+        </div>
+
+
+
+
+        <!-- end project-main -->
+      </div>
+      <!-- end main -->
+      </div>
+      <!-- end flexy -->
+    </div>
+	</body>
+
+
 </html>
