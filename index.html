@@ -4,7 +4,30 @@
 		<link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
-      document.getElementById("tab-1").className = "MyClass";
+      function clickTab(tabNum) {
+        // tab 1 -> projects
+        if (tabNum === 1) {
+        // color tab 1
+        document.getElementById("tab-1").className = "activeTab";
+        // deselect tab 2
+        document.getElementById("tab-2").className = "tab";
+        // logic to display projects div, hide experience div
+        document.getElementById("experience-main-container").className = "hidden";
+        document.getElementById("projects-main-container").className = null;
+        }
+        else if (tabNum === 2) {
+          // color tab 2
+        document.getElementById("tab-2").className = "activeTab";
+        // deselect tab 1
+        document.getElementById("tab-1").className = "tab";
+        // logic to display experience div, hide projects div
+        document.getElementById("projects-main-container").className = "hidden";
+        document.getElementById("experience-main-container").className = null;
+        }
+        
+      }
+
+      
     </script>
 	</head>
 
@@ -15,16 +38,18 @@
         <!-- hide name until it is minized from middle of page -->
         <div class="sidebar-contents">
           <div class="links">
-            <button class="btn-border"><span><i class="fa fa-linkedin" style="color: #00d3ff; font-size:30px; display: block"></i></span></button>
-            <button class="btn-border"><span><i class="fa fa-github" style="color: #00d3ff; font-size:30px; display: block"></i></span></button>
-            <button class="btn-border"><span><i class="fa fa-envelope" style="color: #00d3ff; font-size:30px; display: block"></i></span></button>
+            <button title="Linkedin" class="btn-border"><span><i class="fa fa-linkedin" style="color: #ff00ff; font-size:30px; display: block"></i></span></button>
+            <button title="GitHub" class="btn-border"><span><i class="fa fa-github" style="color: #ff00ff; font-size:30px; display: block"></i></span></button>
+            <button title="email" class="btn-border"><span><i class="fa fa-envelope" style="color: #ff00ff; font-size:30px; display: block"></i></span></button>
           </div>
           <div class="bio1">
             I am a senior in computer science at West Virginia University.
             My primary focus is in web development and I am building my skillset through personal projects,
-            in-house work at my college radio station, and my internship at NextGen Federal Systems.
+            work at my college radio station, and my internship at NextGen Federal Systems.
             <br><br>
-            Feel free to browse through this page to read about my projects and work experience.
+            <span style="text-align: center; margin-top: 5%">Feel free contact me!</span>
+            
+            
           </div>
           <span id="skills-label">Skills</span>
           <div class="skills">
@@ -35,24 +60,26 @@
             <p class="skill">MySQL</p>
             <p class="skill">Node</p>
             <p class="skill">Express</p>
-            <p class="skill">AngularJS</p>
+            <p class="skill">Angular</p>
             <p class="skill">Cesium.js</p>
             <p class="skill">C</p>
             <p class="skill">Java</p>
           </div>
+          <div id="location-label" style="width: 100%; text-align: center; margin-top: 10%; font-family: monospace; font-size: 15px">
+              <span style="display: inline-flex;  width: 80%;"><i class="fa fa-map-marker" style="margin: auto; color: #00ffff; font-size:20px; display: block;"></i>&nbsp;Greater Pittsburgh Area</span>
+            </div>
         </div>
 				
     </div>
 
     <div class="main">
       <div class="name-large">
-        J. Montesano <br> <span style="font-size: 45px; color:#00d3ff;">Developer</span>
-        <div id="tab-2" class="tab"><span>Experience</span></div>
-        <div id="tab-1" class="tab"><span>Projects</span></div>
+        J. Montesano <br> <span class="self-title">Developer</span>
+        <div id="tab-2" class="tab" onclick="clickTab(2)"><span>Experience</span></div>
+        <div id="tab-1" class="activeTab" onclick="clickTab(1)"><span>Projects</span></div>
       </div>
       
       <div id="projects-main-container">
-        
         <div class="project-container">
           <span class="project-name">Reg Rotator</span>
             <div class="project-description">
@@ -60,7 +87,7 @@
               browse artists, and (soon) to create playlists. This CRUD app uses a MERN stack (MySQL, Express.js, React.js, Node.js)
               to allow users to add albums to a database and categorize them by play priority, genre, release date, and more.
               This project was initially meant to digitalize a primarily written process, but is growing into a hub for various radio tasks.
-              Collaboration with <a href="https://victorjperez.github.io/" style="color: #00d3ff">Victor Perez</a>.
+              Collaboration with <a href="https://victorjperez.github.io/" style="color: #ff00ff">Victor Perez</a>.
             </div>
         </div>
         <div class="project-container">
@@ -74,17 +101,122 @@
         <div class="project-container">
           <span class="project-name">montesano.dev</span>
             <div class="project-description">
-              This web page and domain are owned and maintained by myself as an attempt at better understanding web infrastructure. With hosting through GitHub Pages
-              and email through ProtonMail, I have set up this personal domain with encrypted communications.
+              This web page and domain are owned and maintained by myself as an attempt at better understanding web infrastructure. 
               I have upcoming plans to create a personal blog and a mobile version of the site.
             </div>
         </div>
-
-
-
-
         <!-- end project-main -->
       </div>
+
+      <div id="experience-main-container" class="hidden">
+
+
+        <div class="experience">
+          <span class="employer"><span class="employer-name">NextGen Federal Systems</span><span class="time-range">May 2019 - Present</span></span>
+            <div class="job-location">
+              <span style="display: inline-flex"><i class="fa fa-map-marker" style="margin: auto; color: #00ffff; font-size:20px; display: block"></i>&nbsp;Morgantown, WV</span>
+            </div>
+            <div class="job">
+            <span class="job-title">Development Support Intern</span>
+            <span class="job-description">
+              <ul>
+                <li>
+                  Report to an experienced mentor to assist with development of proprietary web applications
+                </li>
+                <li>
+                  Learn and implement various frameworks/libraries to new and existing projects
+                </li>
+                <li>
+                  Maintain a secure, organized workspace using modern software engineering principles and standard practices
+                </li>
+                <div style="margin-top:2%;font-size: 13px">
+                  <span class="skill">Angular</span><span class="skill">React</span><span class="skill">Cesium.js</span><span class="skill">Node</span><span class="skill">Express</span>
+                </div>
+              </ul>
+            </span>
+          </div>
+        </div>
+
+        <div class="experience">
+          <span class="employer"><span class="employer-name">WWVU-FM</span></span>
+            <div class="job-location">
+              <span style="display: inline-flex"><i class="fa fa-map-marker" style="margin: auto; color: #00ffff; font-size:20px; display: block"></i>&nbsp;West Virginia University, Morgantown, WV</span>
+            </div>
+            <div class="job">
+              <span class="job-title">Volunteer DJ</span><span class="job-time-range">April 2017 - Present</span>
+              <span class="job-description">
+              <ul>
+                <li>
+                Perform scheduled, weekly, on-air radio broadcasts
+                </li>
+                <li>
+                  Keep a clean, structured station and create community among staff
+                </li>
+              </ul>
+              </span>
+            </div>
+            <div class="job">
+              <span class="job-title">Assistant Music Director</span><span class="job-time-range"> January 2019 - Present</span>
+              <span class="job-description">
+              <ul>
+                <li>
+                  Coordinate with music director and record promoters to discover and choose new music to put in rotation
+                </li>
+                <li>
+                  Create and mandate departmental policies to preserve station integrity and meet legal requirements
+                </li>
+                <li>
+                  Promote, interview, hire, and train new DJs as well as other paid staff
+                </li>
+                <li>
+                  Build a digital platform for management of music rotation
+                </li>
+              </ul>
+              </span>
+            </div>
+            <div class="job">
+              <span class="job-title">Summer Station Manager</span><span class="job-time-range"> June 2019 - August 2019</span>
+              <span class="job-description">
+              <ul>
+                <li>
+                  Ensured station ran smoothly over summer break
+                </li>
+                <li>
+                  Managed a summer DJ staff and covered shifts when no DJs are present
+                </li>
+                <li>
+                  Worked with broadcast advisor to begin a backup and digitalization process of the 15,000+ CD library
+                </li>
+              </ul>
+              </span>
+            </div>
+            <div class="job">
+              <span class="job-title">Station Librarian</span><span class="job-time-range"> August 2019 - Present</span>
+              <span class="job-description">
+              <ul>
+                <li>
+                  Manage a station-wide music backup and digitalization project
+                </li>
+                <li>
+                  Design efficient processes to backup music, and software interfaces to browse and organize the digital library
+                </li>
+                <li>
+                  Organize, clean up, and pack physical CDs and records
+                </li>
+              </ul>
+              </span>
+            </div>
+        </div>
+
+          <!-- <span class="dropdown">
+            <span class="dropdown-icon"><i class="fa fa-angle-down" style="margin: auto; font-size:30px; display: block"></i></span>
+          </span> -->
+
+          
+        </div>
+        
+
+
       <!-- end main -->
       </div>
       <!-- end flexy -->
