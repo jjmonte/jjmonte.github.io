@@ -1,227 +1,163 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device=width, initial-scale=1.0" />
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
-      function clickTab(tabNum) {
-        // tab 1 -> projects
-        if (tabNum === 1) {
-        // color tab 1
-        document.getElementById("tab-1").className = "activeTab";
-        // deselect tab 2
-        document.getElementById("tab-2").className = "tab";
-        // logic to display projects div, hide experience div
-        document.getElementById("experience-main-container").className = "hidden";
-        document.getElementById("projects-main-container").className = null;
-        }
-        else if (tabNum === 2) {
-          // color tab 2
-        document.getElementById("tab-2").className = "activeTab";
-        // deselect tab 1
-        document.getElementById("tab-1").className = "tab";
-        // logic to display experience div, hide projects div
-        document.getElementById("projects-main-container").className = "hidden";
-        document.getElementById("experience-main-container").className = null;
-        }
+  <title>
+    J. Montesano - Portfolio.
+  </title>
+  <head>
+    <link rel="icon" href="./resources/images/group.png" />
+    <link rel="stylesheet" type="text/css" href="styles_2.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="styles_mobile.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <div class="flexy-boi">
+    <!-- Main flexbox -->
+
+    <!-- <div class="m-top-bar">
+        <div id="m-title"><img id="m-color_lines" src="resources/images/color_lines.png"/><span id="m-title_text">jade<br>montesano</span></div>
+        <!-- <div class="m-buttons-container"> -->
+    <!-- <button class="m-button"><img class="m-img" src="resources/images/face_icon.png"/></button>
+          <button class="m-button"><img class="m-img" src="resources/images/hdd.png"/></button>
+          <button class="m-button"><img class="m-img" src="resources/images/Group 9.png"/></button> -->
+    <!-- </div> -->
+
+    <!-- </div> -->
+
+    <header class="header">
+      <a href="" class="logo">
+        <img id="color_lines" src="resources/images/color_lines.png" />
+        <div id="title">jade montesano
+        <div class="icon-contents">software developer<br/>designer</div>
         
-      }
+        </div></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
 
+        <li><img class="icon-img" src="resources/images/face_icon.png"/><a style="display: inline-flex;" ref="#about">about
+          <div class="icon-contents">bio<br/>skills</div>
+        </a></li>
+
+        <li><img class="icon-img" src="resources/images/hdd.png"/><a style="display: inline-flex;" href="#portfolio">portfolio
+          <div class="icon-contents">projects<br/>experience</div>
+        </a></li>
+
+        <li><img class="icon-img" src="resources/images/Group 9.png"/><a style="display: inline-flex;" href="#contact">contact
+          <div class="icon-contents">email<br/>connect</div>
+        </a></li>
+      </ul>
+    </header>
+    <div class="page-body">
+      <div class="page-content">
+        <div id="about">
+          <div class="page-title">
+            about
+          </div>
+          <br>
+          <p class="tab">hi, my name is jade. i'm a software developer, web designer, music nerd, and student.
+          i'm currently pursuing a bachelor's degree in computer science at west virginia university.
+          my degree focus area is in software engineering and project management. in my personal projects, i am focusing on web development.
+          </p>
+          <br>
+          <p class="tab">in my free time, i dj at my college radio station, wwvu-fm. i have also worked at the station as the summer manager, 
+          assistant music director, librarian, and as director of the electronic show. i've worked on a React app designed
+          to aid the station in transitioning to a fully digital rotation platform. there is more info on this project in the 'portfolio' section
+          of this site.</p>
+          <br>
+          <p class="tab">i currently intern part time at a small, local software company.
+            i am always open to taking on new projects and exploring opportunities.</p><br>let's work together.
+        </div>
+        <div id="portfolio">
+          <div class="page-title">
+            projects
+          </div>
+          <br>
+          <span class="pjct-title">montesano.dev</span><p class="tab">this website is a project intended to achieve two main goals: 
+            create an online professional presence which is unique to myself, and to introduce myself to critical design techniques.
+            my website, its design, hosting, and content are ongoing projects which i will continuosly update and improve.</p>
+            <br>
+            <table class="techs-table">
+              <tr>
+                <td style="background-color: #CF3476">HTML</td>
+                <td style="background-color: #FFBC42">CSS</td>
+                <td style="background-color: #0496FF" >JS</td>
+              </tr>
+            </table>
+            <p class="pjct-br"></p>
+        </div>
+      </div>
       
-    </script>
-	</head>
+    </div>
 
-	<body>
-    <div class="flexy-boi">
-      <div class="side-bar">
-      <img id="photo" src="./resources/images/Sinister_Stranger_chathead.jpeg"></img>
-        <!-- hide name until it is minized from middle of page -->
-        <div class="sidebar-contents">
-          <div class="links">
-            <button title="Linkedin" class="btn-border"><span><i class="fa fa-linkedin" style="color: #ff00ff; font-size:30px; display: block"></i></span></button>
-            <button title="GitHub" class="btn-border"><span><i class="fa fa-github" style="color: #ff00ff; font-size:30px; display: block"></i></span></button>
-            <button title="email" class="btn-border"><span><i class="fa fa-envelope" style="color: #ff00ff; font-size:30px; display: block"></i></span></button>
+    <!-- <div class="top-bar">
+      <div class="top-bar-contents">
+        <a class="top-bar-button">
+          <img id="color_lines" src="resources/images/color_lines.png" />
+          <div class="button-header">
+            jade montesano
+            <div class="button-contents">software developer<br />designer</div>
           </div>
-          <div class="bio1">
-            I am a senior in computer science at West Virginia University.
-            My primary focus is in web development and I am building my skillset through personal projects,
-            work at my college radio station, and my internship at NextGen Federal Systems.
-            <br><br>
-            <span style="text-align: center; margin-top: 5%">Feel free contact me!</span>
-            
-            
+        </a>
+
+        <a class="top-bar-button">
+          <img class="button-img" src="resources/images/face_icon.png" />
+          <div class="button-header">
+            about
+            <div class="button-contents">bio<br />skills</div>
           </div>
-          <span id="skills-label">Skills</span>
+        </a>
+
+        <a class="top-bar-button">
+          <img class="button-img" src="resources/images/hdd.png" />
+          <div class="button-header">
+            portfolio
+            <div class="button-contents">projects<br />experience</div>
+          </div>
+        </a>
+
+        <a class="top-bar-button">
+          <img class="button-img" src="resources/images/Group 9.png" />
+          <div class="button-header">
+            contact
+            <div class="button-contents">email<br />connect</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div> -->
+  <!-- <div style="height: 100%; min-height: 100%; display: flex;">
+    <div class="welcome-view">
+      hello, welcome to my website.<br />let's work together.
+    </div> -->
+    <!-- <div class="page-body"> -->
+    <!-- <img class="self-portrait" src="resources/images/Sinister_Stranger_chathead.jpeg"/> -->
+    <!-- <br> -->
+    <!-- <div class="self-header">
+          I am a web developer and designer currently pursuing a degree in computer science at West Virginia University.
+          <br><br>
+          I am building my skillset through personal projects, work at my college radio station, and internships.
+          <br><br>
+          I have worked with a number of languages, technologies, and frameworks including:
           <div class="skills">
-            <p class="skill">HTML</p>
-            <p class="skill">CSS</p>
-            <p class="skill">Javascript</p>
-            <p class="skill">React</p>
-            <p class="skill">MySQL</p>
-            <p class="skill">Node</p>
-            <p class="skill">Express</p>
-            <p class="skill">Angular</p>
-            <p class="skill">Cesium.js</p>
-            <p class="skill">C</p>
-            <p class="skill">Java</p>
+            <span class="skill-tag">JavaScript</span><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span>
+            <span class="skill-tag">React</span><br><br><span class="skill-tag">MySQL</span><span class="skill-tag">Python</span>
+            <span class="skill-tag">C</span><span class="skill-tag">Java</span><span class="skill-tag">Netbeans</span>
+            
           </div>
-          <div id="location-label" style="width: 100%; text-align: center; margin-top: 10%; font-family: monospace; font-size: 15px">
-              <span style="display: inline-flex;  width: 80%;"><i class="fa fa-map-marker" style="margin: auto; color: #00ffff; font-size:20px; display: block;"></i>&nbsp;Greater Pittsburgh Area</span>
-            </div>
-        </div>
-				
-    </div>
+          On this site you will find my portfolio, resume, and contact details.
+          <br>Feel free to browse around and contact me if you've got any questions!
+        </div> -->
 
-    <div class="main">
-      <div class="name-large">
-        J. Montesano <br> <span class="self-title">Developer</span>
-        <div id="tab-2" class="tab" onclick="clickTab(2)"><span>Experience</span></div>
-        <div id="tab-1" class="activeTab" onclick="clickTab(1)"><span>Projects</span></div>
-      </div>
-      
-      <div id="projects-main-container">
-        <div class="project-container">
-          <span class="project-name">Reg Rotator</span>
-            <div class="project-description">
-              A web application designed for college radio stations to manage rotation, 
-              browse artists, and (soon) to create playlists. This CRUD app uses a MERN stack (MySQL, Express.js, React.js, Node.js)
-              to allow users to add albums to a database and categorize them by play priority, genre, release date, and more.
-              This project was initially meant to digitalize a primarily written process, but is growing into a hub for various radio tasks.
-              Collaboration with <a href="https://victorjperez.github.io/" style="color: #ff00ff">Victor Perez</a>.
-            </div>
-        </div>
-        <div class="project-container">
-          <span class="project-name">Air Track</span>
-            <div class="project-description">
-              This web application was originally a training project I planned and developed while learning AngularJS. The project evolved from
-              a simple HTML/AngularJS app into a single page React app. Utilizing Cesium.js for maps and the OpenSky Network API, Air Track allows
-              users to browse airports by state (US only) and view the flights arriving and departing from the specified airport over a selected time span.
-            </div>
-        </div>
-        <div class="project-container">
-          <span class="project-name">montesano.dev</span>
-            <div class="project-description">
-              This web page and domain are owned and maintained by myself as an attempt at better understanding web infrastructure. 
-              I have upcoming plans to create a personal blog and a mobile version of the site.
-            </div>
-        </div>
-        <!-- end project-main -->
-      </div>
-
-      <div id="experience-main-container" class="hidden">
-
-
-        <div class="experience">
-          <span class="employer"><span class="employer-name">NextGen Federal Systems</span><span class="time-range">May 2019 - Present</span></span>
-            <div class="job-location">
-              <span style="display: inline-flex"><i class="fa fa-map-marker" style="margin: auto; color: #00ffff; font-size:20px; display: block"></i>&nbsp;Morgantown, WV</span>
-            </div>
-            <div class="job">
-            <span class="job-title">Development Support Intern</span>
-            <span class="job-description">
-              <ul>
-                <li>
-                  Report to an experienced mentor to assist with development of proprietary web applications
-                </li>
-                <li>
-                  Learn and implement various frameworks/libraries to new and existing projects
-                </li>
-                <li>
-                  Maintain a secure, organized workspace using modern software engineering principles and standard practices
-                </li>
-                <div style="margin-top:2%;font-size: 13px">
-                  <span class="skill">Angular</span><span class="skill">React</span><span class="skill">Cesium.js</span><span class="skill">Node</span><span class="skill">Express</span>
-                </div>
-              </ul>
-            </span>
-          </div>
-        </div>
-
-        <div class="experience">
-          <span class="employer"><span class="employer-name">WWVU-FM</span></span>
-            <div class="job-location">
-              <span style="display: inline-flex"><i class="fa fa-map-marker" style="margin: auto; color: #00ffff; font-size:20px; display: block"></i>&nbsp;West Virginia University, Morgantown, WV</span>
-            </div>
-            <div class="job">
-              <span class="job-title">Volunteer DJ</span><span class="job-time-range">April 2017 - Present</span>
-              <span class="job-description">
-              <ul>
-                <li>
-                Perform scheduled, weekly, on-air radio broadcasts
-                </li>
-                <li>
-                  Keep a clean, structured station and create community among staff
-                </li>
-              </ul>
-              </span>
-            </div>
-            <div class="job">
-              <span class="job-title">Assistant Music Director</span><span class="job-time-range"> January 2019 - Present</span>
-              <span class="job-description">
-              <ul>
-                <li>
-                  Coordinate with music director and record promoters to discover and choose new music to put in rotation
-                </li>
-                <li>
-                  Create and mandate departmental policies to preserve station integrity and meet legal requirements
-                </li>
-                <li>
-                  Promote, interview, hire, and train new DJs as well as other paid staff
-                </li>
-                <li>
-                  Build a digital platform for management of music rotation
-                </li>
-              </ul>
-              </span>
-            </div>
-            <div class="job">
-              <span class="job-title">Summer Station Manager</span><span class="job-time-range"> June 2019 - August 2019</span>
-              <span class="job-description">
-              <ul>
-                <li>
-                  Ensured station ran smoothly over summer break
-                </li>
-                <li>
-                  Managed a summer DJ staff and covered shifts when no DJs are present
-                </li>
-                <li>
-                  Worked with broadcast advisor to begin a backup and digitalization process of the 15,000+ CD library
-                </li>
-              </ul>
-              </span>
-            </div>
-            <div class="job">
-              <span class="job-title">Station Librarian</span><span class="job-time-range"> August 2019 - Present</span>
-              <span class="job-description">
-              <ul>
-                <li>
-                  Manage a station-wide music backup and digitalization project
-                </li>
-                <li>
-                  Design efficient processes to backup music, and software interfaces to browse and organize the digital library
-                </li>
-                <li>
-                  Organize, clean up, and pack physical CDs and records
-                </li>
-              </ul>
-              </span>
-            </div>
-        </div>
-
-          <!-- <span class="dropdown">
-            <span class="dropdown-icon"><i class="fa fa-angle-down" style="margin: auto; font-size:30px; display: block"></i></span>
-          </span> -->
-
-          
-        </div>
-        
-
-
-      <!-- end main -->
-      </div>
-      <!-- end flexy -->
-    </div>
-	</body>
-
-
+    <!-- <br> -->
+    <!-- </div> -->
+    <!-- <img id="color_balls" src="resources/images/color_balls.png" /> -->
+  </div>
+  <!-- <img id="color_balls" src="resources/images/color_balls.png" /> -->
 </html>
