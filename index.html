@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device=width, initial-scale=1.0" />
+<meta name="viewport" content="width=device=width,initial-scale=1" />
 <html>
   <title>
     J. Montesano - Portfolio.
   </title>
   <head>
     <link rel="icon" href="./resources/images/group.png" />
-    <link rel="stylesheet" type="text/css" href="styles_2.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="styles_mobile.css" /> -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-
+  <body>
   <div class="flexy-boi">
     <!-- Main flexbox -->
-
-    <!-- <div class="m-top-bar">
-        <div id="m-title"><img id="m-color_lines" src="resources/images/color_lines.png"/><span id="m-title_text">jade<br>montesano</span></div>
-        <!-- <div class="m-buttons-container"> -->
-    <!-- <button class="m-button"><img class="m-img" src="resources/images/face_icon.png"/></button>
-          <button class="m-button"><img class="m-img" src="resources/images/hdd.png"/></button>
-          <button class="m-button"><img class="m-img" src="resources/images/Group 9.png"/></button> -->
-    <!-- </div> -->
-
-    <!-- </div> -->
 
     <header class="header">
       <a href="" class="logo">
@@ -41,7 +29,7 @@
       ></label>
       <ul class="menu">
 
-        <li><img class="icon-img" src="resources/images/face_icon.png"/><a style="display: inline-flex;" ref="#about">about
+        <li><img class="icon-img" src="resources/images/face_icon.png"/><a style="display: inline-flex;" href="#about">about
           <div class="icon-contents">bio<br/>skills</div>
         </a></li>
 
@@ -78,10 +66,11 @@
           <div class="page-title">
             projects
           </div>
+          <!-- BEGIN PROJECT 1 -->
           <br>
-          <span class="pjct-title">montesano.dev</span><p class="tab">this website is a project intended to achieve two main goals: 
+            <span class="pjct-title">montesano.dev</span><p class="tab">This website is a project intended to achieve two main goals: 
             create an online professional presence which is unique to myself, and to introduce myself to critical design techniques.
-            my website, its design, hosting, and content are ongoing projects which i will continuosly update and improve.</p>
+            My website, its design, hosting, and content are ongoing projects which I will continuosly update and improve.</p>
             <br>
             <table class="techs-table">
               <tr>
@@ -90,48 +79,52 @@
                 <td style="background-color: #0496FF" >JS</td>
               </tr>
             </table>
+            <br>
             <p class="pjct-br"></p>
+          <!-- END PROJECT 1 -->
+          <!-- BEGIN PROJECT 2 -->
+            <span class="pjct-title">RegRotator</span><p class="tab">RegRotator is a React CRUD app designed to assist my college radio
+              station in transitioning from a primarily handwritten process of managing it's current and historical music library. RegRotator
+              gives the user access to a database of artists/albums/songs, which they can add to. With this data, they select categories of radio 'playability' 
+              of albums, and manage what albums are currently in rotation. The app stores and retrieves data from a remote MySQL server.
+            </p>
+            <br>
+            <table class="techs-table">
+              <tr>
+                <td style="background-color: #006BA6">React.js</td>
+                <td style="background-color: #8F2D56">MySQL</td>
+              </tr>
+            </table>
+            <br>
+            <p class="pjct-br"></p>
+          <!-- END PROJECT 2 -->
+          <!-- BEGIN PROJECT 3 -->
+            <span class="pjct-title">Airport TrackApp</span><p class="tab">Airport TrackApp was a small, educational project which I created during my internship
+              while in the process of learning to use Angular.js and Cesium. It gives users the ability to browse through all large/medium U.S. airports,
+              view the airports on a map via Cesium, and browse through all live flights (within a specified time frame) going to/from any of those airports. 
+              Flight data was retrieved from the OpenSky API.
+            </p>
+            <br>
+            <table class="techs-table">
+              <tr>
+                <td style="background-color: #FFBC42">Cesium.js</td>
+                <td style="background-color: #CF3476">Angular.js</td>
+              </tr>
+            </table>
+            <br>
+            <p class="pjct-br"></p>
+          <!-- END PROJECT 3 -->
+          <div class="foot">
+            <img class="color_balls" src="resources/images/color_balls.png">
+          <span class="footer">montesano.dev - october 2019</span>
+          </div>
         </div>
       </div>
       
     </div>
-
-    <!-- <div class="top-bar">
-      <div class="top-bar-contents">
-        <a class="top-bar-button">
-          <img id="color_lines" src="resources/images/color_lines.png" />
-          <div class="button-header">
-            jade montesano
-            <div class="button-contents">software developer<br />designer</div>
-          </div>
-        </a>
-
-        <a class="top-bar-button">
-          <img class="button-img" src="resources/images/face_icon.png" />
-          <div class="button-header">
-            about
-            <div class="button-contents">bio<br />skills</div>
-          </div>
-        </a>
-
-        <a class="top-bar-button">
-          <img class="button-img" src="resources/images/hdd.png" />
-          <div class="button-header">
-            portfolio
-            <div class="button-contents">projects<br />experience</div>
-          </div>
-        </a>
-
-        <a class="top-bar-button">
-          <img class="button-img" src="resources/images/Group 9.png" />
-          <div class="button-header">
-            contact
-            <div class="button-contents">email<br />connect</div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div> -->
+    <!-- </div> -->
+    
+  <!-- </div> -->
   <!-- <div style="height: 100%; min-height: 100%; display: flex;">
     <div class="welcome-view">
       hello, welcome to my website.<br />let's work together.
@@ -159,5 +152,6 @@
     <!-- </div> -->
     <!-- <img id="color_balls" src="resources/images/color_balls.png" /> -->
   </div>
+  </body>
   <!-- <img id="color_balls" src="resources/images/color_balls.png" /> -->
 </html>
